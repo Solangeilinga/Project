@@ -2,13 +2,12 @@ const Cours = () => {
 const modules = ["Business Opportunities", "Marketing", "Challenge and Innovation", "Web development"];
 
    return (
-     <section>
-      <h1>Cours</h1>
+     <section id="cours">
       <div>
        {modules.map((module) => (
-         <ol key={Math.random()}>
+         <ul key={Math.random()}>
            <li>{module}</li>
-         </ol>
+         </ul>
        ))}
        </div>
      </section>

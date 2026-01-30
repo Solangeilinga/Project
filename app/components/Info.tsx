@@ -1,8 +1,6 @@
 const infos = () => {
 return (
     <Info
-      img="./logo.png"
-      title="Fiche Etudiant"
       tag="Logo de 2ie"
       firstname="Solange"
       lastname="ILINGA"
@@ -11,11 +9,9 @@ return (
   );
 };
 
-const Info = ({ img, title, tag, firstname, lastname, genre }) => {
+const Info = ({ firstname, lastname, genre }) => {
   return (
     <main>
-        <img src={img} alt={tag} />
-      <h1>{title}</h1>
       <ul>
         <li>
           Nom : {lastname}
